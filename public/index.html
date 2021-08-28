@@ -100,6 +100,30 @@
                 margin-top: 370px;
                 }
         }
+        .container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
         </style>
     </head>
     <body class="antialiased relative">
@@ -124,9 +148,14 @@
 					</div>
 					<!-- Mobile menu button -->
 					<div class="md:hidden flex items-center mr-2">
-						<button class="outline-none mobile-menu-button">
+						<!--<button class="outline-none mobile-menu-button">
 						    <svg class="w-6 h-6 text-white"	x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"> <path d="M4 6h16M4 12h16M4 18h16"></path></svg>
-					    </button>
+					    </button> -->
+                        <div class="container mobile-menu-button" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
 					</div>
 				</div>
 			</div>
