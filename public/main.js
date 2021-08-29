@@ -1,10 +1,16 @@
 const btn = document.querySelector(".mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
+let barToggle = document.getElementById("bars");
 
 btn.addEventListener("click", () => {
 menu.classList.toggle("hidden");
 });
 
-function myFunction(x) {
-    x.classList.toggle("change");
-}
+function hideContainer(x) {
+    menu.classList.toggle("hidden");
+    barToggle.classList.toggle("change");
+};
+
+function myFunction() {
+    barToggle.classList.toggle("change");
+};
