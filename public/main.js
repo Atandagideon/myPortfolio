@@ -6,11 +6,15 @@ btn.addEventListener("click", () => {
 menu.classList.toggle("hidden");
 });
 
+barToggle.addEventListener("click", () => {
+    barToggle.classList.toggle("change");
+});
+
 function hideContainer(x) {
     menu.classList.toggle("hidden");
     barToggle.classList.toggle("change");
 };
 
-function myFunction() {
-    barToggle.classList.toggle("change");
-};
+//function myFunction() {
+  //  barToggle.classList.toggle("change");
+//};
