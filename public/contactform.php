@@ -1,6 +1,14 @@
 <?php
-if ($_POST["message"]) {
-    mail("ajbl.segun@gmail.com", "Hiring Message",
-    
-    $_POST["Hello Segun, I'd love to hire you."]. "From: a")
+if (isset($_POST["submit"])) {
+    $name = $_POST["name"];
+    $subject = $_POST["subject"];
+    $mailFrom = $_POST["mail"];
+    $message = $_POST["message"];
+
+    $mailTo = "ajbl.segun@gmail.com";
+    $headers = "From: ".$mailFrom;
+    $txt = "You have received an email from ".$name.".\n\n".$message;
+
+    mail($mailTo, $subject, $txt, $headers);
+    header("Location: index.php?mailsend");
 }
