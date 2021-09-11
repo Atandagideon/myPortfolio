@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoader", () => {
- let letter = document.querySelectorAll
+// document.addEventListener("DOMContentLoader", () => {
+//  let letter = document.querySelectorAll
 
-})
+// })
