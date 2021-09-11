@@ -15,6 +15,3 @@ function hideContainer(x) {
     barToggle.classList.toggle("change");
 };
 
-//function myFunction() {
-  //  barToggle.classList.toggle("change");
-//};

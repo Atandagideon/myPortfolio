@@ -1,3 +1,119 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media screen and (min-width: 300px) {
+            #testimonials {
+        margin-top: 1500px;
+        }
+}
+@media screen and (min-width: 315px) {
+            #testimonials {
+        margin-top: 1400px;
+        }
+}
+@media screen and (min-width: 345px) {
+            #testimonials {
+        margin-top: 1300px;
+        }
+}
+@media screen and (min-width: 379px) {
+            #testimonials {
+        margin-top: 1200px;
+        }
+}
+@media screen and (min-width: 402px) {
+            #testimonials {
+        margin-top: 1200px;
+        }
+}
+@media screen and (min-width: 434px) {
+            #testimonials {
+        margin-top: 1100px;
+        }
+}
+@media screen and (min-width: 466px) {
+            #testimonials {
+        margin-top: 1060px;
+        }
+}
+@media screen and (min-width: 513px) {
+            #testimonials {
+        margin-top: 1020px;
+        }
+}
+@media screen and (min-width: 528px) {
+            #testimonials {
+        margin-top: 1010px;
+        }
+}
+@media screen and (min-width: 560px) {
+            #testimonials {
+        margin-top: 960px;
+        }
+}
+@media screen and (min-width: 562px) {
+            #testimonials {
+        margin-top: 930px;
+        }
+}
+@media screen and (min-width: 683px) {
+            #testimonials {
+        margin-top: 920px;
+        }
+}
+@media screen and (min-width: 715px) {
+            #testimonials {
+        margin-top: 820px;
+        }
+}
+@media screen and (min-width: 768px) {
+            #testimonials {
+        margin-top: 500px;
+        }
+}
+@media screen and (min-width: 843px) {
+            #testimonials {
+        margin-top: 460px;
+        }
+}
+@media screen and (min-width: 949px) {
+            #testimonials {
+        margin-top: 420px;
+        }
+}
+@media screen and (min-width: 1031px) {
+            #testimonials {
+        margin-top: 410px;
+        }
+}
+@media screen and (min-width: 1099px) {
+            #testimonials {
+        margin-top: 370px;
+        }
+}
+.container {
+        display: inline-block;
+        cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+        width: 32px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+}
+
+.change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+}
